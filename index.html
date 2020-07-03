@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Catalog</title>
+    <title>Lizard McSlay</title>
     <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
     <!-- https://fonts.google.com/ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/templatemo-video-catalog.css">
@@ -26,10 +30,10 @@ https://templatemo.com/tm-552-video-catalog
                 <div class="container-fluid position-relative">
                     <div class="row">
                         <div class="col-7 col-md-4">
-                            <a href="index.html" class="tm-bg-black text-center tm-logo-container">
-                                <i class="fas fa-video tm-site-logo mb-3"></i>
-                                <h1 class="tm-site-name">Video Catalog</h1>
-                            </a>
+<!--                            <a href="index.html" class="tm-bg-black text-center tm-logo-container">-->
+<!--                                <i class="fas fa-video tm-site-logo mb-3"></i>-->
+<!--                                <h1 class="tm-site-name">Video Catalog</h1>-->
+<!--                            </a>-->
                         </div>
                         <div class="col-5 col-md-8 ml-auto mr-0">
                             <div class="tm-site-nav">
@@ -42,42 +46,42 @@ https://templatemo.com/tm-552-video-catalog
                                             <i class="fas fa-times tm-menu-opened-icon"></i>
                                         </span>
                                     </button>
-                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
-                                        <ul class="navbar-nav text-uppercase">
-                                            <li class="nav-item active">
-                                                <a class="nav-link tm-nav-link" href="#">Videos <span class="sr-only">(current)</span></a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="about.html">About</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+<!--                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">-->
+<!--                                        <ul class="navbar-nav text-uppercase">-->
+<!--                                            <li class="nav-item active">-->
+<!--                                                <a class="nav-link tm-nav-link" href="#">Videos <span class="sr-only">(current)</span></a>-->
+<!--                                            </li>-->
+<!--                                            <li class="nav-item">-->
+<!--                                                <a class="nav-link tm-nav-link" href="about.html">About</a>-->
+<!--                                            </li>-->
+<!--                                            <li class="nav-item">-->
+<!--                                                <a class="nav-link tm-nav-link" href="contact.html">Contact</a>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
                                 </nav>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tm-welcome-container text-center text-white">
-                <div class="tm-welcome-container-inner">
-                    <p class="tm-welcome-text mb-1 text-white">Video Catalog is brought to you by TemplateMo.</p>
-                    <p class="tm-welcome-text mb-5 text-white">This is a full-width video banner.</p>
-                    <a href="#content" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
-                        <span>Discover</span>
-                    </a>
-                </div>
+<!--            <div class="tm-welcome-container text-center text-white">-->
+<!--                <div class="tm-welcome-container-inner">-->
+<!--                    <p class="tm-welcome-text mb-1 text-white">HAPPY BIRTHDAY LIZARD MCSLAY</p>-->
+<!--                    <p class="tm-welcome-text mb-5 text-white">Sorry in advance...</p>-->
+<!--&lt;!&ndash;                    <a href="#content" class="btn tm-btn-animate tm-btn-cta tm-icon-down">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span>Discover</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <div class="tm-video-container">
+                <video controls id="tm-video">
+                    <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
+                        <source src="img/IMG_6960.mov" type="video/mp4">
+                </video>
             </div>
 
-            <div id="tm-video-container">
-                <video autoplay muted loop id="tm-video">
-                    <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
-                        <source src="video/wheat-field.mp4" type="video/mp4">
-                </video>    
-            </div>
-            
             <i id="tm-video-control-button" class="fas fa-pause"></i>
         </div>
 
@@ -86,196 +90,493 @@ https://templatemo.com/tm-552-video-catalog
                 <main>
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="tm-page-title mb-4">Our Video Catalog</h2>
-                            <div class="tm-categories-container mb-5">
-                                <h3 class="tm-text-primary tm-categories-text">Categories:</h3>
-                                <ul class="nav tm-category-list">
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link active">All</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Drone Shots</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Nature</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Actions</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Featured</a></li>
-                                </ul>
-                            </div>        
+                            <h1 class="tm-page-title mb-8" id="bday_text">HAPPY BIRTHDAY LIZARD MCSLAY</h1>
+<!--                            <div class="tm-categories-container mb-5">-->
+<!--                                <h3 class="tm-text-primary tm-categories-text">Categories:</h3>-->
+<!--                                <ul class="nav tm-category-list">-->
+<!--                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link active">All</a></li>-->
+<!--                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Drone Shots</a></li>-->
+<!--                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Nature</a></li>-->
+<!--                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Actions</a></li>-->
+<!--                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Featured</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
                         </div>
                     </div>
-                    
-                    <div class="row tm-catalog-item-list">
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>    
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Aenean aliquet sapien</h3>
-                                <p class="tm-catalog-item-text">Video thumbnail has a link to another HTML page. 
-                                    Categories <span class="tm-text-secondary">do not need</span> any JS. 
-                                    They are just separated HTML pages. Paging is at the bottom to extend the list as long as you want. 
-                                    This can be a large catalog.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Mauris in odio vel odio</h3>
-                                <p class="tm-catalog-item-text">You may need TemplateMo for a quick chat or send an email if you have any question about this CSS template. 
-                                    <span class="tm-text-secondary">font-family: 'Source Sans Pro', sans-serif; for this template.</span></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>                            
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Sagittis sodales enim</h3>
-                                <p class="tm-catalog-item-text">You are allowed to use this video catalog for your business websites. 
-                                Please do not make a re-distribution of our template ZIP file on any template collection website.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-04.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>    
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Nam tincidunt consectetur</h3>
-                                <p class="tm-catalog-item-text">You can apply this template for your commercial CMS theme. Nam sem leo, imperdiet non lacinia eget, volutpat ac massa. Donec mattis in velit quis commodo. Cras nec rutrum arcu.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-05.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Praesent posuere rhoncus</h3>
-                                <p class="tm-catalog-item-text">Duis vulputate nisl metus, eget dapibus nunc ultricies id. Ut augue mauris, varius quis nulla non, sollicitudin consectetur nisl. Donec eget arcu placerat, ullamcorper.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-06.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>                            
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Turpis massa aliquam</h3>
-                                <p class="tm-catalog-item-text">Nunc neque risus, ultrices sed luctus at, iaculis at arcu. Pellentesque rutrum velit nec sapien ullamcorper ultrices. Vestibulum lectus risus, laoreet pretium ipsum</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-07.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>    
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Class aptent taciti sociosqu</h3>
-                                <p class="tm-catalog-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum orci sit amet dignissim rhoncus. Pellentesque pretium faucibus vestibulum.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-08.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Donec ac nisl ul elit</h3>
-                                <p class="tm-catalog-item-text">Suspendisse in odio congue, lobortis metus sed, venenatis nisl. In dapibus et massa feugiat facilisis. Maecenas venenatis aliquet nulla, a tincidunt erat suscipit eget.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-09.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>                            
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Sed mattis nisi erat</h3>
-                                <p class="tm-catalog-item-text">Integer ultricies mi eu aliquet cursus. Nam sem leo, imperdiet non lacinia eget, volutpat ac massa. Donec mattis in velit quis commodo. Cras nec rutrum arcu.</p>
-                            </div>
-                        </div>
+                    <div class="row tm-video-container">
+                        <video controls id="tm-video2">
+                            <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
+                                <source src="img/IMG_9293.mov" type="video/mp4">
+                        </video>
                     </div>
+                    <div class="row tm-catalog-item-list mtop">
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9059.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Welcome to Lizard McSlay's life.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9122.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz likes partying.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9557.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">and boys.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_7580.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Sometimes Liz parties a lil too hard.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_3008.JPG" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">...</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_8044.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">But she's cute about it.</h3>
+                            </div>
+                        </div>
 
-                    <!-- Catalog Paging Buttons -->
-                    <div>
-                        <ul class="nav tm-paging-links">
-                            <li class="nav-item active"><a href="#" class="nav-link tm-paging-link">1</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">2</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">3</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">4</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">></a></li>
-                        </ul>
-                    </div>
-                </main>
-
-                <!-- Subscribe form and footer links -->
-                <div class="row mt-5 pt-3">
-                    <div class="col-xl-6 col-lg-12 mb-4">
-                        <div class="tm-bg-gray p-5 h-100">
-                            <h3 class="tm-text-primary mb-3">Do you want to get our latest updates?</h3>
-                            <p class="mb-5">Please subscribe our newsletter for upcoming new videos and latest information about our
-                                work. Thank you.</p>
-                            <form action="" method="GET" class="tm-subscribe-form">
-                                <input type="text" name="email" placeholder="Your Email..." required>
-                                <button type="submit" class="btn rounded-0 btn-primary tm-btn-small">Subscribe</button>
-                            </form>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9700.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz likes lunch.</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
-                        <div class="p-5 tm-bg-gray">
-                            <h3 class="tm-text-primary mb-4">Quick Links</h3>
-                            <ul class="list-unstyled tm-footer-links">
-                                <li><a href="#">Duis bibendum</a></li>
-                                <li><a href="#">Purus non dignissim</a></li>
-                                <li><a href="#">Sapien metus gravida</a></li>
-                                <li><a href="#">Eget consequat</a></li>
-                                <li><a href="#">Praesent eu pulvinar</a></li>
-                            </ul>    
-                        </div>                        
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
-                        <div class="p-5 tm-bg-gray h-100">
-                            <h3 class="tm-text-primary mb-4">Our Pages</h3>
-                            <ul class="list-unstyled tm-footer-links">
-                                <li><a href="#">Our Videos</a></li>
-                                <li><a href="#">License Terms</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Privacy Policies</a></li>
-                            </ul>
-                        </div>                        
-                    </div>
-                </div> <!-- row -->
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9062.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Preferably Crop Chop.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_7931.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">She can't always eat so gracefully though.</h3>
+                            </div>
+                        </div>
 
-                <footer class="row pt-5">
-                    <div class="col-12">
-                        <p class="text-right">Copyright 2020 The Video Catalog Company 
-                        
-                        - Designed by <a href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo</a></p>
-                    </div>
-                </footer>
-            </div> <!-- tm-content-container -->
-        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9780.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz is a big fan of Hoya Hockey.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9844.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Here she is with one of the blue liners.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_8961.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">She gets excited when her favorite players are on the same line.</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9283.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz is a francophile.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9280.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">And apparently she doesn't mind smokers.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/lp_image.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Pucker up, french boys!</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9089.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz is a big fan of Jesse McCartney.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9092.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">... big fan.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9093.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz was a big fan of Jesse McCartney.</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_8756.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz won't let Jesse get her down.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_8846.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">She always plays it cool. "You have nice eyes." "I have to go to the bathroom."</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_8935.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">She's always been a little psycho though.</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9568.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz definitely has a murderous side.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9559.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">She can be vicious.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_7758.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">But usually she's just an innocent bystander.</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9872.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz likes to exercise.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9751.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Drunk apartment biking is one of her favorite activities.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+<!--                                <img src="img/IMG_9093.png" alt="Image" class="img-fluid tm-catalog-item-img">-->
+                                <video controls>
+                                    <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
+                                        <source src="img/IMG_1132.mov" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">But the majority of her cardio comes from doing TikTok dances.</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <video controls>
+                                    <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
+                                        <source src="img/recorded-1330844961615.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz likes to dance.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <video controls>
+                                    <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
+                                        <source src="img/IMG_7759.mov" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">She can teach you how to Dougie.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_8539.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">And she's not afraid to do the big moves.</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9667.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">"Why this old thing? Why, I only wear it when I don't care how I look.".</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_8055.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz's mom hired a photographer for her formal freshman year.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9610.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz almost believed it.</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9284.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Liz loves her friends.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9136.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">And her Starbucks.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9954.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">And Harley.</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9571.png" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">She especially loves White Claws.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_9095.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">And gets very angry when there aren't any around.</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/IMG_7758.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">But usually she's just an innocent bystander.</h3>
+                            </div>
+                        </div>
+<!--                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">-->
+<!--                            <div class="position-relative tm-thumbnail-container">-->
+<!--                                <img src="img/tn-04.jpg" alt="Image" class="img-fluid tm-catalog-item-img">-->
+<!--                                <a href="video-page.html" class="position-absolute tm-img-overlay">-->
+<!--                                    <i class="fas fa-play tm-overlay-icon"></i>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="p-4 tm-bg-gray tm-catalog-item-description">-->
+<!--                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Nam tincidunt consectetur</h3>-->
+<!--                                <p class="tm-catalog-item-text">You can apply this template for your commercial CMS theme. Nam sem leo, imperdiet non lacinia eget, volutpat ac massa. Donec mattis in velit quis commodo. Cras nec rutrum arcu.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">-->
+<!--                            <div class="position-relative tm-thumbnail-container">-->
+<!--                                <img src="img/tn-05.jpg" alt="Image" class="img-fluid tm-catalog-item-img">-->
+<!--                                <a href="video-page.html" class="position-absolute tm-img-overlay">-->
+<!--                                    <i class="fas fa-play tm-overlay-icon"></i>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="p-4 tm-bg-gray tm-catalog-item-description">-->
+<!--                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Praesent posuere rhoncus</h3>-->
+<!--                                <p class="tm-catalog-item-text">Duis vulputate nisl metus, eget dapibus nunc ultricies id. Ut augue mauris, varius quis nulla non, sollicitudin consectetur nisl. Donec eget arcu placerat, ullamcorper.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">-->
+<!--                            <div class="position-relative tm-thumbnail-container">-->
+<!--                                <img src="img/tn-06.jpg" alt="Image" class="img-fluid tm-catalog-item-img">-->
+<!--                                <a href="video-page.html" class="position-absolute tm-img-overlay">-->
+<!--                                    <i class="fas fa-play tm-overlay-icon"></i>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="p-4 tm-bg-gray tm-catalog-item-description">-->
+<!--                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Turpis massa aliquam</h3>-->
+<!--                                <p class="tm-catalog-item-text">Nunc neque risus, ultrices sed luctus at, iaculis at arcu. Pellentesque rutrum velit nec sapien ullamcorper ultrices. Vestibulum lectus risus, laoreet pretium ipsum</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">-->
+<!--                            <div class="position-relative tm-thumbnail-container">-->
+<!--                                <img src="img/tn-07.jpg" alt="Image" class="img-fluid tm-catalog-item-img">-->
+<!--                                <a href="video-page.html" class="position-absolute tm-img-overlay">-->
+<!--                                    <i class="fas fa-play tm-overlay-icon"></i>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="p-4 tm-bg-gray tm-catalog-item-description">-->
+<!--                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Class aptent taciti sociosqu</h3>-->
+<!--                                <p class="tm-catalog-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum orci sit amet dignissim rhoncus. Pellentesque pretium faucibus vestibulum.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">-->
+<!--                            <div class="position-relative tm-thumbnail-container">-->
+<!--                                <img src="img/tn-08.jpg" alt="Image" class="img-fluid tm-catalog-item-img">-->
+<!--                                <a href="video-page.html" class="position-absolute tm-img-overlay">-->
+<!--                                    <i class="fas fa-play tm-overlay-icon"></i>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="p-4 tm-bg-gray tm-catalog-item-description">-->
+<!--                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Donec ac nisl ul elit</h3>-->
+<!--                                <p class="tm-catalog-item-text">Suspendisse in odio congue, lobortis metus sed, venenatis nisl. In dapibus et massa feugiat facilisis. Maecenas venenatis aliquet nulla, a tincidunt erat suscipit eget.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">-->
+<!--                            <div class="position-relative tm-thumbnail-container">-->
+<!--                                <img src="img/tn-09.jpg" alt="Image" class="img-fluid tm-catalog-item-img">-->
+<!--                                <a href="video-page.html" class="position-absolute tm-img-overlay">-->
+<!--                                    <i class="fas fa-play tm-overlay-icon"></i>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="p-4 tm-bg-gray tm-catalog-item-description">-->
+<!--                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Sed mattis nisi erat</h3>-->
+<!--                                <p class="tm-catalog-item-text">Integer ultricies mi eu aliquet cursus. Nam sem leo, imperdiet non lacinia eget, volutpat ac massa. Donec mattis in velit quis commodo. Cras nec rutrum arcu.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Catalog Paging Buttons &ndash;&gt;-->
+<!--                    <div>-->
+<!--                        <ul class="nav tm-paging-links">-->
+<!--                            <li class="nav-item active"><a href="#" class="nav-link tm-paging-link">1</a></li>-->
+<!--                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">2</a></li>-->
+<!--                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">3</a></li>-->
+<!--                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">4</a></li>-->
+<!--                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">></a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </main>-->
+
+<!--                &lt;!&ndash; Subscribe form and footer links &ndash;&gt;-->
+<!--                <div class="row mt-5 pt-3">-->
+<!--                    <div class="col-xl-6 col-lg-12 mb-4">-->
+<!--                        <div class="tm-bg-gray p-5 h-100">-->
+<!--                            <h3 class="tm-text-primary mb-3">Do you want to get our latest updates?</h3>-->
+<!--                            <p class="mb-5">Please subscribe our newsletter for upcoming new videos and latest information about our-->
+<!--                                work. Thank you.</p>-->
+<!--                            <form action="" method="GET" class="tm-subscribe-form">-->
+<!--                                <input type="text" name="email" placeholder="Your Email..." required>-->
+<!--                                <button type="submit" class="btn rounded-0 btn-primary tm-btn-small">Subscribe</button>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">-->
+<!--                        <div class="p-5 tm-bg-gray">-->
+<!--                            <h3 class="tm-text-primary mb-4">Quick Links</h3>-->
+<!--                            <ul class="list-unstyled tm-footer-links">-->
+<!--                                <li><a href="#">Duis bibendum</a></li>-->
+<!--                                <li><a href="#">Purus non dignissim</a></li>-->
+<!--                                <li><a href="#">Sapien metus gravida</a></li>-->
+<!--                                <li><a href="#">Eget consequat</a></li>-->
+<!--                                <li><a href="#">Praesent eu pulvinar</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">-->
+<!--                        <div class="p-5 tm-bg-gray h-100">-->
+<!--                            <h3 class="tm-text-primary mb-4">Our Pages</h3>-->
+<!--                            <ul class="list-unstyled tm-footer-links">-->
+<!--                                <li><a href="#">Our Videos</a></li>-->
+<!--                                <li><a href="#">License Terms</a></li>-->
+<!--                                <li><a href="#">About Us</a></li>-->
+<!--                                <li><a href="#">Contact</a></li>-->
+<!--                                <li><a href="#">Privacy Policies</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div> &lt;!&ndash; row &ndash;&gt;-->
+
+<!--                <footer class="row pt-5">-->
+<!--                    <div class="col-12">-->
+<!--                        <p class="text-right">Copyright 2020 The Video Catalog Company-->
+
+<!--                        - Designed by <a href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo</a></p>-->
+<!--                    </div>-->
+<!--                </footer>-->
+<!--            </div> &lt;!&ndash; tm-content-container &ndash;&gt;-->
+<!--        </div>-->
 
     </div> <!-- .tm-page-wrap -->
 
@@ -324,7 +625,7 @@ https://templatemo.com/tm-552-video-catalog
                 timeout = setTimeout(setVideoSize, 100);
             };
 
-            // Play/Pause button for video background      
+            // Play/Pause button for video background
             const btn = $("#tm-video-control-button");
 
             btn.on("click", function (e) {

@@ -48,15 +48,28 @@ h2, p { color: #666666; }
 .tm-site-logo { font-size: 3rem; }
 .tm-site-name { font-size: 1.9rem; }
 
-#tm-video-container {
-    max-height: 720px;
-    overflow: hidden;
+#bday_text {
+    color:red;
+}
+
+.tm-video-container {
+    max-height: 1000px;
+    /*overflow: hidden;*/
     background-color: #333;
 }
 
 #tm-video {
     width: 100%;
     height: auto;
+}
+
+#tm-video2 {
+    width: 100%;
+    height: auto;
+}
+
+.mtop {
+    margin-top: 120px;
 }
 
 .tm-bg-black {
@@ -70,7 +83,7 @@ h2, p { color: #666666; }
 
 .tm-nav-link {
     color: white;
-    font-size: 1.4rem;    
+    font-size: 1.4rem;
 }
 
 #tm-main-nav .nav-item .nav-link { border-bottom: 1px solid transparent; }
@@ -187,9 +200,9 @@ h2, p { color: #666666; }
 }
 
 .tm-btn-download span { padding-top: 10px; }
-.tm-btn-small { 
+.tm-btn-small {
     padding: 10.5px 35px;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
 #tm-video-control-button {
@@ -246,7 +259,7 @@ h2, p { color: #666666; }
     justify-content: center;
     padding-right: 8px;
     z-index: 1002;
-    transition: all 0.3s ease;  
+    transition: all 0.3s ease;
 }
 
 .tm-img-overlay:hover { background-color: transparent; }
@@ -291,8 +304,8 @@ h2, p { color: #666666; }
     color: #666666;
 }
 
-.tm-subscribe-form { 
-    display: flex; 
+.tm-subscribe-form {
+    display: flex;
     align-items: center;
 }
 
@@ -308,8 +321,8 @@ h2, p { color: #666666; }
 /*Video detail page*/
 
 .tm-video-title { font-size: 2.5rem; }
-.tm-share-box { 
-    font-size: 1.4rem; 
+.tm-share-box {
+    font-size: 1.4rem;
     padding: 3rem;
 }
 .tm-share-box-title { font-size: 1.4rem; }
@@ -346,7 +359,7 @@ h2, p { color: #666666; }
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;    
+    background-size: cover;
     background-color: #666;
 }
 
@@ -449,7 +462,7 @@ video {
         right: 0;
         padding: 0;
     }
-    
+
     .navbar-collapse {
         background-color: rgba(0,0,0,0.5);
         border-radius: 5px;
@@ -468,7 +481,7 @@ video {
 
     .navbar-toggler.collapsed {
         border-bottom-left-radius: .25rem;
-        border-bottom-right-radius: .25rem;   
+        border-bottom-right-radius: .25rem;
     }
 
     .navbar-toggler i.tm-menu-opened-icon { display: block; }
@@ -501,8 +514,8 @@ video {
 }
 
 @media (max-width: 640px) {
-    .tm-subscribe-form { 
-        flex-direction: column; 
+    .tm-subscribe-form {
+        flex-direction: column;
         align-items: stretch;
     }
 
